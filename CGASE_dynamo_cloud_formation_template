@@ -1,0 +1,62 @@
+AWSTemplateFormatVersion: 2010-09-09
+Metadata:
+  'AWS::CloudFormation::Designer':
+    6f0e666d-421a-4e42-bb1c-ac5810210b5f:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 180
+        'y': 90
+      z: 1
+      embeds: []
+    b9d22221-5ba5-4566-82f0-bc69afeadc1a:
+      size:
+        width: 60
+        height: 60
+      position:
+        x: 60
+        'y': 90
+      z: 1
+      embeds: []
+Resources:
+  seUserTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: user_id
+          AttributeType: 'N'
+        - AttributeName: username
+          AttributeType: S
+        - AttributeName: password
+          AttributeType: S
+        - AttributeName: department
+          AttributeType: S
+        - AttributeName: rank
+          AttributeType: S
+      KeySchema:
+        - AttributeName: user_id
+          KeyType: RANGE
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: b9d22221-5ba5-4566-82f0-bc69afeadc1a
+  seLogTable:
+    Type: 'AWS::DynamoDB::Table'
+    Properties:
+      AttributeDefinitions:
+        - AttributeName: date
+          AttributeType: S
+        - AttributeName: time
+          AttributeType: S
+        - AttributeName: from
+          AttributeType: 'N'
+        - AttributeName: to
+          AttributeType: 'N'
+        - AttributeName: message
+          AttributeType: S
+      KeySchema:
+        - AttributeName: user_id
+          KeyType: RANGE
+    Metadata:
+      'AWS::CloudFormation::Designer':
+        id: 6f0e666d-421a-4e42-bb1c-ac5810210b5f

@@ -1,0 +1,19 @@
+//www.plantuml.com/plantuml/png/JOqn3W8n30JxlC9FkOQExaHzieY98cBdP3kYGFoTG1ENC_RkRkQeFhYbUqCps2_7pKZXdG2gE8m9HysJTjSgvIy4cPOvP-xLDVnaEb6TINmvHNccJreprrv-Aok4JW6zSiI7TexN7e3930lDzeqa3svV
+
+@startuml
+class SE_User {
+  int user_id
+  String username
+  String password
+  String department
+  String rank
+}
+
+class SE_Log {
+   String date
+   String time
+   String from
+   String to
+   String message
+}
+@enduml

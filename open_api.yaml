@@ -1,0 +1,51 @@
+openapi: "3.0.1"
+info:
+  title: "SE-User-API"
+  version: "2022-03-05 22:10:49UTC"
+servers:
+- url: "https://3q75kg0nuf.execute-api.us-east-1.amazonaws.com/{basePath}"
+  variables:
+    basePath:
+      default: ""
+paths:
+  /deck/logs/{id}:
+    get:
+      responses:
+        default:
+          description: "Default response for GET /deck/logs/{id}"
+    put:
+      responses:
+        default:
+          description: "Default response for PUT /deck/logs/{id}"
+    parameters:
+    - name: "id"
+      in: "path"
+      description: "Generated path parameter for id"
+      required: true
+      schema:
+        type: "string"
+  /users:
+    get:
+      responses:
+        default:
+          description: "Default response for GET /users"
+    put:
+      responses:
+        default:
+          description: "Default response for PUT /users"
+  /users/{id}:
+    get:
+      responses:
+        default:
+          description: "Default response for GET /users/{id}"
+    put:
+      responses:
+        default:
+          description: "Default response for PUT /users/{id}"
+    parameters:
+    - name: "id"
+      in: "path"
+      description: "Generated path parameter for id"
+      required: true
+      schema:
+        type: "string"
