@@ -29,10 +29,6 @@ paths:
       responses:
         default:
           description: "Default response for GET /users"
-    put:
-      responses:
-        default:
-          description: "Default response for PUT /users"
   /users/{id}:
     get:
       responses:

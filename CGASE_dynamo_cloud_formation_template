@@ -44,6 +44,8 @@ Resources:
     Type: 'AWS::DynamoDB::Table'
     Properties:
       AttributeDefinitions:
+        - AttributeName: message_id
+          AttributeType: 'N'
         - AttributeName: date
           AttributeType: S
         - AttributeName: time
