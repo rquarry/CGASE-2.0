@@ -1,4 +1,4 @@
-//www.plantuml.com/plantuml/png/JOqn3W8n30JxlC9FkOQExaHzieY98cBdP3kYGFoTG1ENC_RkRkQeFhYbUqCps2_7pKZXdG2gE8m9HysJTjSgvIy4cPOvP-xLDVnaEb6TINmvHNccJreprrv-Aok4JW6zSiI7TexN7e3930lDzeqa3svV
+//www.plantuml.com/plantuml/png/JSsn2WCX3CRntQVmKMxfrkteV8IQYjJ48ubqA7ttYd2OyVSHyj_KGAnJ3SyAgd6_7Gz5YTyGOs6BVU0eQMWtAPpdm42ubXDKFqtSJS8Jn0ZPrYR0x_0BAtDlULQk0z8yG-iB63fQ8S-ND7Aqva2e2Xb7RaDEdUeV
 
 @startuml
 class SE_User {
@@ -10,6 +10,7 @@ class SE_User {
 }
 
 class SE_Log {
+   String msg_id
    String date
    String time
    String from
